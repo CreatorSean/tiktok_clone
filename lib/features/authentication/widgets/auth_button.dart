@@ -5,29 +5,29 @@ import 'package:tiktok_clone/constants/sizes.dart';
 class AuthButton extends StatelessWidget {
   final String text;
   final FaIcon icon;
-  final Widget Function() createPage;
+  // final Widget Function() createPage;
 
   const AuthButton({
     super.key,
     required this.text,
     required this.icon,
-    required this.createPage,
+    // required this.createPage,
   });
 
-  void pushScreen(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (BuildContext context) {
-          return createPage();
-        },
-      ),
-    );
-  }
+  // void pushScreen(BuildContext context) {
+  //   Navigator.of(context).push(
+  //     MaterialPageRoute(
+  //       builder: (BuildContext context) {
+  //         return createPage();
+  //       },
+  //     ),
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => pushScreen(context),
+      // onTap: () => pushScreen(context),
       child: FractionallySizedBox(
         widthFactor: 1,
         child: Container(
